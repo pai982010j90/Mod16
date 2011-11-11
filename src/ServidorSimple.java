@@ -25,7 +25,7 @@ public class ServidorSimple {
                 OutputStream s1out = s1.getOutputStream();
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s1out));
                 
-                System.out.println("Hola");
+                System.out.println("Cliente conectadose a este servidor:"+s1.getInetAddress().toString());
                 bw.write("Bienvenido a la red\n");
                 
                 bw.close();
